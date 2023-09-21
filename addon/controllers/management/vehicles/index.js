@@ -441,82 +441,8 @@ export default class ManagementVehiclesIndexController extends ManagementControl
      * @param {Object} options
      * @void
      */
-    // @action async viewVehicle(vehicle, options) {
-    //     await vehicle?.loadDriver();
-
-    //     this.modalsManager.show('modals/vehicle-details', {
-    //         title: withDefaultValue(vehicle.display_name),
-    //         titleComponent: 'modal/title-with-buttons',
-    //         modalClass: 'modal-lg',
-    //         acceptButtonText: 'Done',
-    //         headerButtons: [
-    //             {
-    //                 icon: 'cog',
-    //                 iconPrefix: 'fas',
-    //                 type: 'link',
-    //                 size: 'xs',
-    //                 ddMenuLabel: 'Vehicle Actions',
-    //                 options: [
-    //                     {
-    //                         title: 'Edit vehicle details...',
-    //                         action: () => {
-    //                             this.modalsManager.done().then(() => {
-    //                                 return this.editVehicle(vehicle, {
-    //                                     onFinish: () => {
-    //                                         this.viewVehicle(vehicle);
-    //                                     },
-    //                                 });
-    //                             });
-    //                         },
-    //                     },
-    //                     {
-    //                         title: 'Assign driver to vehicle...',
-    //                         action: () => {
-    //                             this.modalsManager.done().then(() => {
-    //                                 return this.assignDriver(vehicle, {
-    //                                     onFinish: () => {
-    //                                         this.viewVehicle(vehicle);
-    //                                     },
-    //                                 });
-    //                             });
-    //                         },
-    //                     },
-    //                     {
-    //                         title: 'Delete vehicle...',
-    //                         action: () => {
-    //                             this.modalsManager.done().then(() => {
-    //                                 return this.deleteVehicle(vehicle, {
-    //                                     onDecline: () => {
-    //                                         this.viewVehicle(vehicle);
-    //                                     },
-    //                                 });
-    //                             });
-    //                         },
-    //                     },
-    //                 ],
-    //             },
-    //         ],
-    //         viewDriver: (driver) => {
-    //             this.modalsManager.done().then(() => {
-    //                 return this.drivers.viewDriver(driver, {
-    //                     onFinish: () => {
-    //                         this.viewVehicle(vehicle);
-    //                     },
-    //                 });
-    //             });
-    //         },
-    //         vehicle,
-    //         ...options,
-    //     });
-    // }
-
-    /**
-    * Transition to service rate edit route.
-    *
-    * @param {VehicleModel} vehicle
-    */
     @action viewVehicle(vehicle) {
-        this.transitionToRoute('management.vehicles.index.new.details.view', vehicle);
+        return this.transitionToRoute('management.vehicles.index.details', vehicle);
     }
 
     /**
@@ -526,84 +452,18 @@ export default class ManagementVehiclesIndexController extends ManagementControl
      * @void
      */
     @action createVehicle() {
-        const vehicle = this.store.createRecord('vehicle', {
-            status: 'active',
-            slug: generateSlug(),
-        });
-
-        return this.editVehicle(vehicle, {
-            title: 'New Vehicle',
-            acceptButtonText: 'Confirm & Create',
-            acceptButtonIcon: 'check',
-            acceptButtonIconPrefix: 'fas',
-            // successNotification: `New vehicle (${vehicle.name}) created.`,
-            onConfirm: () => {
-                return this.hostRouter.refresh();
-            },
-        });
+        return this.transitionToRoute('management.vehicles.index.new');
     }
 
-    // /**
-    //  * Edit a `vehicle` details
-    //  *
-    //  * @param {VehicleModel} vehicle
-    //  * @param {Object} options
-    //  * @void
-    //  */
-    // @action async editVehicle(vehicle, options = {}) {
-    //     await vehicle?.loadDriver();
-
-    //     this.modalsManager.show('modals/vehicle-form', {
-    //         title: 'Edit Vehicle',
-    //         acceptButtonText: 'Save Changes',
-    //         acceptButtonIcon: 'save',
-    //         modalClass: 'modal-lg',
-    //         vehicle,
-    //         uploadNewPhoto: (file) => {
-    //             this.fetch.uploadFile.perform(
-    //                 file,
-    //                 {
-    //                     path: `uploads/${this.currentUser.companyId}/vehicles/${vehicle.slug}`,
-    //                     subject_uuid: vehicle.id,
-    //                     subject_type: `vehicle`,
-    //                     type: `vehicle_photo`,
-    //                 },
-    //                 (uploadedFile) => {
-    //                     vehicle.setProperties({
-    //                         photo_uuid: uploadedFile.id,
-    //                         photo_url: uploadedFile.url,
-    //                         photo: uploadedFile,
-    //                     });
-    //                 }
-    //             );
-    //         },
-    //         confirm: (modal, done) => {
-    //             modal.startLoading();
-
-    //             vehicle
-    //                 .save()
-    //                 .then((vehicle) => {
-    //                     this.notifications.success(options.successNotification ?? `${vehicle.name} details updated.`);
-    //                 })
-    //                 .catch((error) => {
-    //                     modal.stopLoading();
-    //                     this.notifications.serverError(error);
-    //                 })
-    //                 .finally(() => {
-    //                     done();
-    //                 });
-    //         },
-    //         ...options,
-    //     });
-    // }
-
     /**
-     * Transition to service rate edit route.
+     * Edit a `vehicle` details
      *
      * @param {VehicleModel} vehicle
+     * @param {Object} options
+     * @void
      */
     @action editVehicle(vehicle) {
-        this.transitionToRoute('management.vehicles.index.new.details.edit', vehicle);
+        return this.transitionToRoute('management.vehicles.index.edit', vehicle);
     }
 
     /**
@@ -621,4 +481,14 @@ export default class ManagementVehiclesIndexController extends ManagementControl
             ...options,
         });
     }
+
+    /**
+     * Allow user to assign driver to a `vehicle` via prompt
+     *
+     * @param {VehicleModel} vehicle
+     * @param {Object} options
+     * @todo implement
+     * @void
+     */
+    @action assignDriver() {}
 }

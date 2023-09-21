@@ -56,7 +56,6 @@ export default class OperationsServiceRatesIndexController extends Controller {
      */
     @service modalsManager;
 
-
     /**
      * Inject the `hostRouter` service
      *
@@ -243,6 +242,7 @@ export default class OperationsServiceRatesIndexController extends Controller {
      * Transition to service rate edit route.
      *
      * @param {ServiceRateModel} serviceRate
+     * @memberof OperationsServiceRatesIndexController
      */
     @action editServiceRate(serviceRate) {
         this.transitionToRoute('operations.service-rates.index.edit', serviceRate);

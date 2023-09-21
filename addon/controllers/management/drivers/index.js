@@ -496,6 +496,12 @@ export default class ManagementDriversIndexController extends Controller {
      * @param {Object} options
      * @void
      */
+    @action viewDriver(driver) {
+        return this.transitionToRoute('management.drivers.index.details', driver);
+    }
+
+
+
     // @action viewDriver(driver, options = {}) {
     //     const viewDriverOnMap = () => {
     //         this.modalsManager.done().then(() => {
@@ -622,36 +628,24 @@ export default class ManagementDriversIndexController extends Controller {
     // }
 
     /**
-    * Transition to service rate edit route.
-    *
-    * @param {DriverModel} driver
-    */
-    @action viewDriver(driver) {
-        this.transitionToRoute('management.drivers.index.new.details.view', driver);
-    }
-
-    /**
      * Create a new `driver` in modal
      *
      * @param {Object} options
      * @void
      */
     @action createDriver() {
-        const driver = this.store.createRecord('driver', {
-            status: `active`,
-            slug: generateSlug(),
-        });
+        return this.transitionToRoute('management.drivers.index.new');
 
-        return this.editDriver(driver, {
-            title: 'New Driver',
-            acceptButtonText: 'Create',
-            acceptButtonIcon: 'check',
-            acceptButtonIconPrefix: 'fas',
-            successNotification: (driver) => `New driver (${driver.name}) created.`,
-            onConfirm: () => {
-                return this.hostRouter.refresh();
-            },
-        });
+        // return this.editDriver(driver, {
+        //     title: 'New Driver',
+        //     acceptButtonText: 'Create',
+        //     acceptButtonIcon: 'check',
+        //     acceptButtonIconPrefix: 'fas',
+        //     successNotification: (driver) => `New driver (${driver.name}) created.`,
+        //     onConfirm: () => {
+        //         return this.hostRouter.refresh();
+        //     },
+        // });
     }
 
     // /**
@@ -719,15 +713,17 @@ export default class ManagementDriversIndexController extends Controller {
     //         ...options,
     //     });
     // }
+
     /**
-     * Transition to service rate edit route.
+     * View a `driver` details in modal
      *
-     * @param {DriverModel} driver
+     * @param {VehicleModel} driver
+     * @param {Object} options
+     * @void
      */
     @action editDriver(driver) {
-        this.transitionToRoute('management.drivers.index.new.details.edit', driver);
+        return this.transitionToRoute('management.drivers.index.edit', driver);
     }
-
     /**
      * Delete a `driver` via confirm prompt
      *
@@ -793,7 +789,7 @@ export default class ManagementDriversIndexController extends Controller {
     }
 
     /**
-     * Prompt user to assign a `vehicle` to a `driver`
+     * Prompt user to assign a `driver` to a `driver`
      *
      * @param {DriverModel} driver
      * @param {Object} options

@@ -30,42 +30,16 @@ export default buildRoutes(function () {
         });
         this.route('drivers', function () {
             this.route('index', { path: '/' }, function () {
-                this.route('new', function () {
-                    this.route('details', { path: '/' }, function () {
-                        this.route('new');
-                        this.route('edit', { path: '/:public_id' });
-                        this.route('view', { path: '/:public_id/view' });
-                    });
-                    this.route('tracking', function () {
-                        this.route('new', { path: '/' });
-                        this.route('edit', { path: '/:public_id' });
-                    });
-                    this.route('orders', function () {
-                        this.route('new', { path: '/' });
-                        this.route('edit', { path: '/:public_id' });
-                    });
-                });
+                this.route('new');
+                this.route('details', { path: '/:public_id' });
+                this.route('edit', { path: '/edit/:public_id' });
             });
         });
         this.route('vehicles', function () {
             this.route('index', { path: '/' }, function () {
-                this.route('new', function () {
-                    this.route('details', { path: '/' }, function () {
-                        this.route('new');
-                        this.route('edit', { path: '/:public_id' });
-                        this.route('view', { path: '/:public_id/view' });
-                    });
-                    this.route('tracking', function () {
-                        this.route('new', { path: '/' });
-                        this.route('edit', { path: '/:public_id' });
-                        this.route('view', { path: '/:public_id/view' });
-                    });
-                    this.route('telematics', function () {
-                        this.route('new', { path: '/' });
-                        this.route('edit', { path: '/:public_id' });
-                        this.route('view', { path: '/:public_id/view' });
-                    });
-                });
+                this.route('details', { path: '/:public_id' });
+                this.route('edit', { path: '/edit/:public_id' });
+                this.route('new');
             });
         });
         this.route('places', function () {
