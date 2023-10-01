@@ -8,8 +8,7 @@ import { timeout } from 'ember-concurrency';
 import { task } from 'ember-concurrency-decorators';
 import extractCoordinates from '@fleetbase/ember-core/utils/extract-coordinates';
 import leafletIcon from '@fleetbase/ember-core/utils/leaflet-icon';
-import generateSlug from '@fleetbase/ember-core/utils/generate-slug';
-import Point from '@fleetbase/fleetops-data/utils/geojson/point';
+// import Point from '@fleetbase/fleetops-data/utils/geojson/point';
 
 export default class ManagementDriversIndexController extends Controller {
     /**
@@ -858,7 +857,7 @@ export default class ManagementDriversIndexController extends Controller {
     @action async viewDriverVehicle(driver, options = {}) {
         this.modalsManager.displayLoader();
 
-        const vehicle = await this.store.findRecord('vehicle', driver.vehicle_uuid);
+        const vehicle = await this.store.queryRecord('vehicle', driver.vehicle_uuid);
 
         this.modalsManager.done().then(() => {
             return this.vehicles.viewVehicle(vehicle, options);
