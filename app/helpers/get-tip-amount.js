@@ -1,1 +1,1 @@
-export { default, getTipAmount } from '@fleetbase/fleetops-engine/helpers/get-tip-amount';
+export { default, getTipAmount } from '@atomizedev/fleetops-engine/helpers/get-tip-amount';

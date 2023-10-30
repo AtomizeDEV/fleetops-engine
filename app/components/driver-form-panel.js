@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/driver-form-panel';
+export { default } from '@atomizedev/fleetops-engine/components/driver-form-panel';

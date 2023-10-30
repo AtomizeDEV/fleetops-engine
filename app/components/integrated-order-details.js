@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/integrated-order-details';
+export { default } from '@atomizedev/fleetops-engine/components/integrated-order-details';

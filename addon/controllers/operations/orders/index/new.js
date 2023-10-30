@@ -6,13 +6,13 @@ import { not, equal, alias } from '@ember/object/computed';
 import { isArray } from '@ember/array';
 import { dasherize } from '@ember/string';
 import { later, next } from '@ember/runloop';
-import { OSRMv1, Control as RoutingControl } from '@fleetbase/leaflet-routing-machine';
-import polyline from '@fleetbase/ember-core/utils/polyline';
-import findClosestWaypoint from '@fleetbase/ember-core/utils/find-closest-waypoint';
-import isNotEmpty from '@fleetbase/ember-core/utils/is-not-empty';
-import getRoutingHost from '@fleetbase/ember-core/utils/get-routing-host';
-import groupBy from '@fleetbase/ember-core/utils/macros/group-by';
-import extractCoordinates from '@fleetbase/ember-core/utils/extract-coordinates';
+import { OSRMv1, Control as RoutingControl } from '@atomizedev/leaflet-routing-machine';
+import polyline from '@atomizedev/ember-core/utils/polyline';
+import findClosestWaypoint from '@atomizedev/ember-core/utils/find-closest-waypoint';
+import isNotEmpty from '@atomizedev/ember-core/utils/is-not-empty';
+import getRoutingHost from '@atomizedev/ember-core/utils/get-routing-host';
+import groupBy from '@atomizedev/ember-core/utils/macros/group-by';
+import extractCoordinates from '@atomizedev/ember-core/utils/extract-coordinates';
 
 L.Bounds.prototype.intersects = function (bounds) {
     var min = this.min,

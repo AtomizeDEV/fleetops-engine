@@ -4,9 +4,9 @@ import { inject as service } from '@ember/service';
 import { action, computed, set, get } from '@ember/object';
 import { isArray } from '@ember/array';
 import { underscore } from '@ember/string';
-import generateUuid from '@fleetbase/ember-core/utils/generate-uuid';
-import getWeightUnits from '@fleetbase/ember-core/utils/get-weight-units';
-import getLengthUnits from '@fleetbase/ember-core/utils/get-length-units';
+import generateUuid from '@atomizedev/ember-core/utils/generate-uuid';
+import getWeightUnits from '@atomizedev/ember-core/utils/get-weight-units';
+import getLengthUnits from '@atomizedev/ember-core/utils/get-length-units';
 
 export default class OrderConfigEntitiesEditorComponent extends Component {
     @service modalsManager;

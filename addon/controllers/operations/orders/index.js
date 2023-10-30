@@ -7,7 +7,7 @@ import { isArray } from '@ember/array';
 import { isBlank } from '@ember/utils';
 import { timeout } from 'ember-concurrency';
 import { task } from 'ember-concurrency-decorators';
-import isModel from '@fleetbase/ember-core/utils/is-model';
+import isModel from '@atomizedev/ember-core/utils/is-model';
 
 export default class OperationsOrdersIndexController extends Controller {
     /**

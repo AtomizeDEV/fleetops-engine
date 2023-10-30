@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/console/components/full-calendar/draggable';
+export { default } from '@atomizedev/console/components/full-calendar/draggable';

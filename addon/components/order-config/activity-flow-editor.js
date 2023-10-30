@@ -5,7 +5,7 @@ import { action, computed, set, setProperties } from '@ember/object';
 import { isArray } from '@ember/array';
 import { equal } from '@ember/object/computed';
 import { underscore } from '@ember/string';
-import generateUuid from '@fleetbase/ember-core/utils/generate-uuid';
+import generateUuid from '@atomizedev/ember-core/utils/generate-uuid';
 
 export default class OrderConfigActivityFlowEditorComponent extends Component {
     constructor() {

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/services/service-areas';
+export { default } from '@atomizedev/fleetops-engine/services/service-areas';

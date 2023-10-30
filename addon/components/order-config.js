@@ -3,7 +3,7 @@ import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 import { action, computed, set } from '@ember/object';
 import { equal } from '@ember/object/computed';
-import isModel from '@fleetbase/ember-core/utils/is-model';
+import isModel from '@atomizedev/ember-core/utils/is-model';
 
 export default class OrderConfigComponent extends Component {
     @service modalsManager;

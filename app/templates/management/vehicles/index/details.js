@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/templates/management/vehicles/index/details';
+export { default } from '@atomizedev/fleetops-engine/templates/management/vehicles/index/details';

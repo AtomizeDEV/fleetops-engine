@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/modals/place-details';
+export { default } from '@atomizedev/fleetops-engine/components/modals/place-details';

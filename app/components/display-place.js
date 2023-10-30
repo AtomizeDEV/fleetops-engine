@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/display-place';
+export { default } from '@atomizedev/fleetops-engine/components/display-place';

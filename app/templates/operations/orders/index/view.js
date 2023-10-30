@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/templates/operations/orders/index/view';
+export { default } from '@atomizedev/fleetops-engine/templates/operations/orders/index/view';

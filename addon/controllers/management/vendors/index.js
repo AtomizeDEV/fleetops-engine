@@ -7,7 +7,7 @@ import { isArray } from '@ember/array';
 import { capitalize } from '@ember/string';
 import { timeout } from 'ember-concurrency';
 import { task } from 'ember-concurrency-decorators';
-import apiUrl from '@fleetbase/ember-core/utils/api-url';
+import apiUrl from '@atomizedev/ember-core/utils/api-url';
 
 export default class ManagementVendorsIndexController extends Controller {
     /**

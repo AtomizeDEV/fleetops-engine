@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/controllers/management';
+export { default } from '@atomizedev/fleetops-engine/controllers/management';

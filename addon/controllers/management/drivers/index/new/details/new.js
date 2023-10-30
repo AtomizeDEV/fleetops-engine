@@ -2,7 +2,7 @@ import Controller, { inject as controller } from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
-import generateSlug from '@fleetbase/ember-core/utils/generate-slug';
+import generateSlug from '@atomizedev/ember-core/utils/generate-slug';
 
 export default class ManagementDriversIndexDetailsNewController extends Controller {
     /**

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/console/components/full-size';
+export { default } from '@atomizedev/console/components/full-size';

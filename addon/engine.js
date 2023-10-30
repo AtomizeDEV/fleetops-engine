@@ -2,7 +2,7 @@ import Engine from '@ember/engine';
 import loadInitializers from 'ember-load-initializers';
 import Resolver from 'ember-resolver';
 import config from './config/environment';
-import services from '@fleetbase/ember-core/exports/services';
+import services from '@atomizedev/ember-core/exports/services';
 import AdminVisibilityControlsComponent from './components/admin/visibility-controls';
 
 const { modulePrefix } = config;

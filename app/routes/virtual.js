@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/routes/virtual';
+export { default } from '@atomizedev/fleetops-engine/routes/virtual';

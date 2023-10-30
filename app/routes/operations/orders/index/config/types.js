@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/routes/operations/orders/index/config/types';
+export { default } from '@atomizedev/fleetops-engine/routes/operations/orders/index/config/types';

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/helpers/is-section-visible';
+export { default } from '@atomizedev/fleetops-engine/helpers/is-section-visible';

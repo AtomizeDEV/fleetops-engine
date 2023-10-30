@@ -1,1 +1,1 @@
-export { default, isActiveRoute } from '@fleetbase/console/helpers/is-active-route';
+export { default, isActiveRoute } from '@atomizedev/console/helpers/is-active-route';

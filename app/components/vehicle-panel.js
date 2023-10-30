@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/vehicle-panel';
+export { default } from '@atomizedev/fleetops-engine/components/vehicle-panel';

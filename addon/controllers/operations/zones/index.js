@@ -3,9 +3,9 @@ import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import { later } from '@ember/runloop';
-import GeoJson from '@fleetbase/fleetops-data/utils/geojson/geo-json';
-import FeatureCollection from '@fleetbase/fleetops-data/utils/geojson/feature-collection';
-import last from '@fleetbase/ember-core/utils/last';
+import GeoJson from '@atomizedev/fleetops-data/utils/geojson/geo-json';
+import FeatureCollection from '@atomizedev/fleetops-data/utils/geojson/feature-collection';
+import last from '@atomizedev/ember-core/utils/last';
 
 export default class OperationsZonesIndexController extends Controller {
     /**

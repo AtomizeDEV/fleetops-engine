@@ -1,1 +1,1 @@
-export { default, extractCoordinates } from '@fleetbase/fleetops-engine/helpers/extract-coordinates';
+export { default, extractCoordinates } from '@atomizedev/fleetops-engine/helpers/extract-coordinates';

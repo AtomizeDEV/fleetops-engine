@@ -1,4 +1,4 @@
-# @fleetbase/fleetops-engine
+# @atomizedev/fleetops-engine
 
 FleetOps extension for Fleetbase.
 
@@ -13,7 +13,7 @@ FleetOps extension for Fleetbase.
 ## Installation
 
 ```
-ember install @fleetbase/fleetops-engine
+ember install @atomizedev/fleetops-engine
 ```
 
 

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/modals/set-password';
+export { default } from '@atomizedev/fleetops-engine/components/modals/set-password';

@@ -1,1 +1,1 @@
-export { default, waypointLabel } from '@fleetbase/fleetops-engine/helpers/waypoint-label';
+export { default, waypointLabel } from '@atomizedev/fleetops-engine/helpers/waypoint-label';

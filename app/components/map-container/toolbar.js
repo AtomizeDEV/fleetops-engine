@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/map-container/toolbar';
+export { default } from '@atomizedev/fleetops-engine/components/map-container/toolbar';

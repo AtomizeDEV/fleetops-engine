@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/routes/home';
+export { default } from '@atomizedev/fleetops-engine/routes/home';

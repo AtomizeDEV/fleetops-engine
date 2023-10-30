@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/templates/operations/scheduler/index';
+export { default } from '@atomizedev/fleetops-engine/templates/operations/scheduler/index';

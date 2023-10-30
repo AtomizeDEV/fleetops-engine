@@ -4,7 +4,7 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import { isBlank } from '@ember/utils';
 import { task, timeout } from 'ember-concurrency';
-import Point from '@fleetbase/fleetops-data/utils/geojson/point';
+import Point from '@atomizedev/fleetops-data/utils/geojson/point';
 
 export default class ManagementPlacesIndexController extends Controller {
     /**

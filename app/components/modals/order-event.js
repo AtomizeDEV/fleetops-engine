@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/modals/order-event';
+export { default } from '@atomizedev/fleetops-engine/components/modals/order-event';

@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/custom-field';
+export { default } from '@atomizedev/fleetops-engine/components/custom-field';

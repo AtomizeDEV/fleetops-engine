@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/components/settings-window';
+export { default } from '@atomizedev/fleetops-engine/components/settings-window';

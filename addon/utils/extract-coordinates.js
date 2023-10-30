@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/ember-core/utils/extract-coordinates';
+export { default } from '@atomizedev/ember-core/utils/extract-coordinates';

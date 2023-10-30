@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/controllers/operations/service-rates/index/new';
+export { default } from '@atomizedev/fleetops-engine/controllers/operations/service-rates/index/new';

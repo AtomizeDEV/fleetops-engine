@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/console/components/file-icon';
+export { default } from '@atomizedev/console/components/file-icon';

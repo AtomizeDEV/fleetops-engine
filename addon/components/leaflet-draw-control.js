@@ -3,7 +3,7 @@ import { computed } from '@ember/object';
 import { assign } from '@ember/polyfills';
 import { scheduleOnce } from '@ember/runloop';
 import { classify, camelize } from '@ember/string';
-import getWithDefault from '@fleetbase/ember-core/utils/get-with-default';
+import getWithDefault from '@atomizedev/ember-core/utils/get-with-default';
 
 export default class LeafletDrawControl extends BaseLayer {
     leafletEvents = [

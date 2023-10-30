@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/routes/management/drivers/index/edit';
+export { default } from '@atomizedev/fleetops-engine/routes/management/drivers/index/edit';

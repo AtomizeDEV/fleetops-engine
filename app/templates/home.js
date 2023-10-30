@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/fleetops-engine/templates/home';
+export { default } from '@atomizedev/fleetops-engine/templates/home';

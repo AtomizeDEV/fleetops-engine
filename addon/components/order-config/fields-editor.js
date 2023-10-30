@@ -4,8 +4,8 @@ import { inject as service } from '@ember/service';
 import { action, setProperties } from '@ember/object';
 import { isArray } from '@ember/array';
 import { classify, underscore } from '@ember/string';
-import groupBy from '@fleetbase/ember-core/utils/macros/group-by';
-import generateUuid from '@fleetbase/ember-core/utils/generate-uuid';
+import groupBy from '@atomizedev/ember-core/utils/macros/group-by';
+import generateUuid from '@atomizedev/ember-core/utils/generate-uuid';
 
 export default class OrderConfigFieldsEditorComponent extends Component {
     constructor() {

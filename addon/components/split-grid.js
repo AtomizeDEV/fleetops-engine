@@ -1,1 +1,1 @@
-export { default } from '@fleetbase/console/components/split-grid';
+export { default } from '@atomizedev/console/components/split-grid';

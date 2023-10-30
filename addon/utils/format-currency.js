@@ -1,1 +1,1 @@
-export { default, formatCurrency } from '@fleetbase/ember-core/utils/format-currency';
+export { default, formatCurrency } from '@atomizedev/ember-core/utils/format-currency';
