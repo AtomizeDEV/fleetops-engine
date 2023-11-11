@@ -5,7 +5,7 @@ import { action, computed } from '@ember/object';
 import { isArray } from '@ember/array';
 import { later } from '@ember/runloop';
 import { not, notEmpty, alias } from '@ember/object/computed';
-import { OSRMv1, Control as RoutingControl } from '@fleetbase/leaflet-routing-machine';
+import { OSRMv1, Control as RoutingControl } from '@atomizedev/leaflet-routing-machine';
 import groupBy from '@atomizedev/ember-core/utils/macros/group-by';
 import findClosestWaypoint from '@atomizedev/ember-core/utils/find-closest-waypoint';
 import getRoutingHost from '@atomizedev/ember-core/utils/get-routing-host';
