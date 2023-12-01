@@ -33,7 +33,6 @@ export default class LayoutFleetOpsSidebarComponent extends Component {
     createMenuPanels() {
         const operationsItems = [
             { title: 'Dashboard', icon: 'home', route: 'operations.orders' },
-            { title: 'Scheduler', icon: 'calendar-day', route: 'operations.scheduler' },
             { title: 'Service Rates', icon: 'file-invoice-dollar', route: 'operations.service-rates' },
         ];
 
